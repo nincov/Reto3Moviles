@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.reto2.FormActivity;
+import com.example.reto2.FormMapsActivity;
 import com.example.reto2.R;
 import com.example.reto2.databinding.FragmentSucursalesBinding;
 
@@ -55,7 +56,7 @@ public class SucursalesFragment extends Fragment {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.action_add:
-                Intent intent = new Intent(getContext(), FormActivity.class);
+                Intent intent = new Intent(getContext(), FormMapsActivity.class);
                 intent.putExtra("name","SUCURSALES");
                 getActivity().startActivity(intent);
                 //Toast.makeText(getContext(), "Hola Sucursales", Toast.LENGTH_SHORT).show();
